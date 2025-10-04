@@ -32,21 +32,24 @@ It detects vehicle presence across four lanes (North, South, East, and West) thr
 ### Stage 1: Capture Background (`ex1.m`)
 
 Captures a reference image of the traffic intersection (without vehicles).
-
-```matlab
+``matlab
 cam = webcam(2);   % Connect to webcam (index 2)
 img = snapshot(cam);
-imwrite(img, 'background.bmp');
-Output: background.bmp (static background image)
+imwrite(img, 'background.bmp');  
 
-Stage 2: Define Monitoring Zones (ex2.m)
+``markdown
+**Output: background.bmp (static background image)**
+
+---
+
+###Stage 2: Define Monitoring Zones (ex2.m)
 Identifies four traffic lanes using a mask image and crops them for focused detection.
 
 Requirements:
 
-background.bmp
+`background.bmp`
 
-mask.bmp (white cross-shaped image defining lanes)
+`mask.bmp` (white cross-shaped image defining lanes)
 
 Output:
 
