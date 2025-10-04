@@ -32,17 +32,12 @@ It detects vehicle presence across four lanes (North, South, East, and West) thr
 ### Stage 1: Capture Background (`ex1.m`)
 
 Captures a reference image of the traffic intersection (without vehicles).
-``matlab
-cam = webcam(2);   % Connect to webcam (index 2)
-img = snapshot(cam);
-imwrite(img, 'background.bmp');  
 
-``markdown
 **Output: background.bmp (static background image)**
 
 ---
 
-###Stage 2: Define Monitoring Zones (ex2.m)
+### Stage 2: Define Monitoring Zones (ex2.m)
 Identifies four traffic lanes using a mask image and crops them for focused detection.
 
 Requirements:
@@ -51,11 +46,9 @@ Requirements:
 
 `mask.bmp` (white cross-shaped image defining lanes)
 
-Output:
+**Output:1.bmp, 2.bmp, 3.bmp, 4.bmp — background models for each lane.** 
 
-1.bmp, 2.bmp, 3.bmp, 4.bmp — background models for each lane.
-
-Stage 3: Real-Time Detection and Reporting (ex3.m)
+### Stage 3: Real-Time Detection and Reporting (ex3.m)
 Performs live monitoring, detects movement, and sends traffic metrics to ThingSpeak.
 
 Dependencies:
