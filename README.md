@@ -93,8 +93,7 @@ Copy your Channel ID and Write API Key.
 Replace them in ex3.m.
 
 Folder Structure
-bash
-Copy code
+```bash
 Traffic-Monitoring-Analysis/
 │
 ├── ex1.m                 # Capture background image
@@ -104,6 +103,7 @@ Traffic-Monitoring-Analysis/
 ├── background.bmp        # Static reference image
 ├── 1.bmp, 2.bmp, 3.bmp, 4.bmp  # Individual lane backgrounds
 └── README.md             # Project documentation
+```
 Future Enhancements
 Integrate object detection for vehicle counting.
 
