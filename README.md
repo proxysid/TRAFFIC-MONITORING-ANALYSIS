@@ -111,7 +111,12 @@ Add AI-based traffic prediction using time-series analysis.
 
 Implement a GUI dashboard for real-time monitoring.
 
-Author
-Siddharth Chandra Prabhakar
-B.Tech (Electronics and Communication Engineering)
-National Institute of Technology, Sikkim
+## Author
+
+**Siddharth Chandra Prabhakar**<br> 
+Final year B.Tech (Electronics & Communication Engineering) <br>
+National Institute of Technology Sikkim
+
+## License
+
+This project is open-source and available under the MIT License.
